@@ -1,0 +1,56 @@
+{
+
+	 "for": {
+		"prefix": "for",
+		"body": [
+			"for(int $1=$2;$1<$3;$1++){",
+			"   $4",
+            "}"
+		],
+		"description": "for循环"
+	},
+	"while": {
+		"prefix": "while",
+		"body": [
+			"while($1){",
+			"   $2",
+            "}"
+		],
+		"description": "while循环"
+	},
+	"include": {
+		"prefix": "#include",
+		"body": [
+			"#include <$1>"
+		],
+		"description": "include"
+	},
+	"draft": {
+		"prefix": "draft",
+		"body": [
+			"//*/",
+			"#define debug",
+			"#include <ctime>",
+			"//*/",
+			"#include <cstdio>",
+			"#include <iostream>",
+			"#include <cstring>",
+			"using namespace std;",
+			"",
+			"int main(){",
+    		"    #ifdef debug",
+    		"    freopen(\"in.txt\", \"r\", stdin);",
+    		"    int START = clock();",
+    		"    #endif",
+			"    cin.tie(0);",
+            "    cin.sync_with_stdio(false);",
+			"    ",
+    		"    #ifdef debug",
+    		"    printf(\"Time:%.3fs.\\n\", double(clock() - START) / CLOCKS_PER_SEC);",
+    		"    #endif",
+    		"    return 0;",
+			"}"
+		],
+		"description": "模板"
+	}
+}

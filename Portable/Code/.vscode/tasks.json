@@ -1,0 +1,65 @@
+{
+    "version": "0.1.0",
+    "command": " ",//需要多个指令 因此留空 以下面的参数为指令
+    "isShellCommand": true,
+    "showOutput": "always",
+    "echoCommand": false,
+    "suppressTaskName": true,
+    "tasks": [
+        {
+            "taskName": "g++",
+            //"command": "g++",
+            "args": ["g++","-g","${file}","-o","${file}.exe"],    // 编译命令参数
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["relative", "${workspaceRoot}"],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+         },
+         {
+            "taskName": "compile",
+            //"command": "compile.bat",
+            "args": ["compile.bat","${file}"],    // 编译命令参数
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["relative", "${workspaceRoot}"],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        },
+        {
+            "taskName": "compile-python",
+            //"command": "compile.bat",
+            "args": ["cpy.bat","${file}"],    // 编译命令参数
+            "problemMatcher": {
+                "owner": "py",
+                "fileLocation": ["relative", "${workspaceRoot}"],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        },
+        {
+            "taskName": "echo",
+            "args": ["echo","${workspaceRoot}/.vscode/.clang-format"]    // 编译命令参数
+        }
+    ]
+}

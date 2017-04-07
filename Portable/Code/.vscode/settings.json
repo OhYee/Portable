@@ -1,0 +1,53 @@
+// 将设置放入此文件中以覆盖默认值和用户设置。
+{   
+    // 字体 字号 字形
+    "editor.fontFamily": "Consolas",
+    "editor.fontSize": 25,
+    "editor.glyphMargin": true,
+
+    // 控制已更新文件的自动保存。接受的值:“off”、"afterDelay”、“onFocusChange”(编辑器失去焦点)、“onWindowChange”(窗口失去焦点)。如果设置为“afterDelay”，则可在 "files.autoSaveDelay" 中配置延迟。
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1,
+
+    // 控制终端的字体系列，这在编辑器中是默认的。fontFamily 的值。
+    "terminal.integrated.fontFamily": "Consolas",
+
+    // 配置 glob 模式以排除文件和文件夹。
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true
+    },
+    // 配置文件路径的 glob 模式以从文件监视排除。更改此设置要求重启。如果在启动时遇到 Code 消耗大量 CPU 时间，则可以排除大型文件夹以减少初始加载。
+    "files.watcherExclude": {
+        "**/.git/objects/**": false
+    },
+    
+    //代码格式化
+    "C_Cpp.clang_format_style": "file",
+    "C_Cpp.clang_format_fallbackStyle": "WebKit",
+
+    // 控制换行的行的缩进。可以是"none"、 "same" 或 "indent"。
+    "editor.wrappingIndent": "indent",
+    // 按 "Tab" 时插入空格。该设置在 `editor.detectIndentation` 启用时根据文件内容进行重写。
+    "editor.insertSpaces": true,
+    // 当打开文件时，将基于文件内容检测 "editor.tabSize" 和 "editor.insertSpaces"。
+    "editor.detectIndentation": true,
+
+    // 控制在多少个字符后编辑器会自动换到下一行。将其设置为 0 则将打开视区宽度换行(自动换行)。将其设置为 -1 则将强制编辑器始终不换行。
+    //"editor.wrappingColumn": 120,
+
+    // 控制是否应换行。换行依据为 min(editor.wrappingColumn, viewportWidthInColumns)。
+    "editor.wordWrap": true,
+
+    // markdown 风格
+    "markdown.styles": ["${workspaceRoot}/.vscode/markdown.css"],
+
+    // 控制是否显示 minimap
+    "editor.minimap.enabled": true,
+
+    // 可执行 GIT 的路径
+    "git.path": "${workspaceRoot}/../support/git/",
+    "python.linting.pylintEnabled": false
+}

@@ -1,0 +1,44 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    //build
+    { "key": "f5","command": "workbench.action.tasks.runTask" },
+    
+    //热键冲突
+    { "key": "shift+alt+up","command": "editor.action.insertCursorAbove","when": "editorTextFocus" },
+    { "key": "shift+alt+down","command": "editor.action.insertCursorBelow","when": "editorTextFocus" },
+    
+    //markdown预览
+    { "key": "alt+m","command": "markdown.showPreview","when": "!terminalFocus" },
+    
+    //关闭窗口
+    { "key": "alt+e","command": "workbench.action.closeActiveEditor" },
+    
+    //全屏
+    { "key": "f11",              "command": "workbench.action.toggleZenMode" },
+    { "key": "f11",         "command": "workbench.action.exitZenMode","when": "inZenMode" },
+ 
+
+    //文件范围移动
+    {"key": "alt+u","command": "cursorTop","when": "editorTextFocus" },
+    {"key": "alt+i","command": "cursorBottom","when": "editorTextFocus" },
+    {"key": "ctrl+alt+u","command": "cursorTopSelect","when": "editorTextFocus" },
+    {"key": "ctrl+alt+i","command": "cursorBottomSelect","when": "editorTextFocus" },
+    
+    //单词范围移动
+    { "key": "alt+j","command": "cursorWordStartLeft","when": "editorTextFocus" },
+    { "key": "shift+alt+j","command": "cursorWordStartLeftSelect","when": "editorTextFocus" },
+    { "key": "alt+k","command": "cursorWordStartRight","when": "editorTextFocus" },
+    { "key": "shift+alt+k","command": "cursorWordStartRightSelect","when": "editorTextFocus" },
+
+    //行范围移动
+    {"key": "alt+h","command": "cursorHome","when": "editorTextFocus"},
+    {"key": "alt+l","command": "cursorEnd","when": "editorTextFocus"},
+    {"key": "shift+alt+h","command": "cursorHomeSelect","when": "editorTextFocus"},
+    {"key": "shift+alt+l","command": "cursorEndSelect","when": "editorTextFocus"},
+
+    //上下移动
+    {"key": "alt+o","command": "cursorUp","when": "editorTextFocus" },
+    {"key": "alt+n","command": "cursorDown","when": "editorTextFocus" },
+    {"key": "shift+alt+o","command": "cursorUpSelect","when": "editorTextFocus" },
+    {"key": "shift+alt+n","command": "cursorDownSelect","when": "editorTextFocus" }
+]

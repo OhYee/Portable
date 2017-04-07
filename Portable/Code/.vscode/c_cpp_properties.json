@@ -1,0 +1,40 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": ["/usr/include"],
+            "browse" : {
+                "limitSymbolsToIncludedHeaders" : true,
+                "databaseFilename" : ""
+            }
+        },
+        {
+            "name": "Linux",
+            "includePath": ["/usr/include"],
+            "browse" : {
+                "limitSymbolsToIncludedHeaders" : true,
+                "databaseFilename" : ""
+            }
+        },
+        {
+            "name": "Win32",
+            "includePath": [
+                            "${workspaceRoot}/../Support/MinGW",
+                            "${workspaceRoot}/../Support/MinGW/include",
+                            "${workspaceRoot}/../Support/MinGW/lib/gcc/mingw32/4.8.1/include",
+                            "${workspaceRoot}/../Support/MinGW/lib/gcc/mingw32/4.8.1/include/c++",
+                            "E:/Portable/Support/MinGW",
+                            "E:/Portable/Support/MinGW/lib/gcc/mingw32/4.8.1/include/c++"
+            ],
+            "browse" : {
+                "limitSymbolsToIncludedHeaders" : true,
+                "databaseFilename" : ""
+            }
+        }
+    ],
+    "clang_format" : {
+        "style" : "file",
+        "fallback-style" : "LLVM",
+        "sort-includes" : false
+    }
+}
