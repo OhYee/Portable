@@ -1,9 +1,18 @@
 // 将设置放入此文件中以覆盖默认值和用户设置。
 {   
+
     // 字体 字号 字形
-    "editor.fontFamily": "Consolas",
+    "editor.fontFamily": "Consolas,'微软雅黑'",
     "editor.fontSize": 25,
     "editor.glyphMargin": true,
+
+    //拖拽
+    "editor.dragAndDrop": true,
+
+    //补全
+    "C_Cpp.autocomplete": "Disabled",
+    //关联整个项目
+    "C_Cpp.addWorkspaceRootToIncludePath": false,
 
     // 控制已更新文件的自动保存。接受的值:“off”、"afterDelay”、“onFocusChange”(编辑器失去焦点)、“onWindowChange”(窗口失去焦点)。如果设置为“afterDelay”，则可在 "files.autoSaveDelay" 中配置延迟。
     "files.autoSave": "afterDelay",
@@ -27,6 +36,7 @@
     //代码格式化
     "C_Cpp.clang_format_style": "file",
     "C_Cpp.clang_format_fallbackStyle": "WebKit",
+    "C_Cpp.clang_format_sortIncludes": true,
 
     // 控制换行的行的缩进。可以是"none"、 "same" 或 "indent"。
     "editor.wrappingIndent": "indent",
@@ -39,15 +49,33 @@
     //"editor.wrappingColumn": 120,
 
     // 控制是否应换行。换行依据为 min(editor.wrappingColumn, viewportWidthInColumns)。
-    "editor.wordWrap": true,
+    "editor.wordWrap": "on",
 
     // markdown 风格
     "markdown.styles": ["${workspaceRoot}/.vscode/markdown.css"],
 
+    //缩进body和head
+    "html.format.indentInnerHtml": true,
+
+    // 控制终端游标的样式。
+    "terminal.integrated.cursorStyle": "line",
+    // 控制终端游标是否闪烁。
+    "terminal.integrated.cursorBlinking": true,
+    // 控制终端保持在缓冲区的最大行数。
+    "terminal.integrated.scrollback": 5000,
+
     // 控制是否显示 minimap
     "editor.minimap.enabled": true,
-
-    // 可执行 GIT 的路径
-    "git.path": "${workspaceRoot}/../support/git/",
-    "python.linting.pylintEnabled": false
+    
+    "files.associations": {
+        "*.cpp": "cpp",
+        "ctime": "cpp",
+        "iostream": "cpp",
+        "array": "cpp",
+        "initializer_list": "cpp",
+        "rope": "cpp",
+        "slist": "cpp",
+        "valarray": "cpp",
+        "ostream": "cpp"
+    }
 }
