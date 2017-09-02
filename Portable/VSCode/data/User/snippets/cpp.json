@@ -25,6 +25,13 @@
 		],
 		"description": "include"
 	},
+	"using": {
+		"prefix": "using",
+		"body": [
+			"using namespace std;"
+		],
+		"description": "using"
+	},
 	"draft": {
 		"prefix": "draft",
 		"body": [
