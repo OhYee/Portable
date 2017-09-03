@@ -1,5 +1,6 @@
 # Portable 环境
-U盘版便携环境,可以在U盘里进行一定程度的代码编辑工作  
+U盘版便携环境,可以在U盘里进行一定程度的代码编辑工作    
+https://www.oyohyee.com/projects/portable
 
 ## 功能特性
 - Hexo U盘化
@@ -31,55 +32,6 @@ Support 内容按照需要下载
 VS Code 以文件夹为单位进行项目划分  
 已写好 `Code` 文件夹的任务文件及配置文件  
 因此建议直接在 `Code` 文件夹内写代码  
-其中键盘映射(`keybindings.json`)和代码模板(`snippets`)需要写在系统目录  
-有 `keybindings_copy.bat` 可以已经放到相应目录 和 `keybindings_delete` 一键删除(同时把改动保存下来)  
 
 每次运行VS Code只需要运行 `run.bat` 即可  
 该批处理会自动将相应内容写入环境变量,然后自动进入 `Code` 目录  
-
-
-## 目录结构
-> Portable  
-> |  
-> |  keybindings_copy.bat  
-> │  keybindings_delete.bat  
-> │  Run.bat  
-> │  
-> ├─Code  
-> │  │  compile.bat  
-> │  │  run.bat  
-> │  │  使用说明,可用文本文档打开.md  
-> │  │  
-> │  └─.vscode  
-> │      │  .BROWSE.VC.DB  
-> │      │  .BROWSE.VC.DB-shm  
-> │      │  c_cpp_properties.json  
-> │      │  keybindings.json  
-> │      │  launch.json  
-> │      │  markdown.css  
-> │      │  settings.json  
-> │      │  tasks.json  
-> │      │  tasks1.json  
-> │      │  
-> │      └─snippets  
-> │              cpp.json  
-> │              locale.json  
-> │              settings.json  
-> │  
-> ├─Support  
-> │  ├─cmder  
-> │  │      Cmder 下载.url  
-> │  │  
-> │  ├─Git  
-> │  │      Git.url  
-> │  │  
-> │  ├─MinGW  
-> │  ├─nodejs  
-> │  │      Node.js.url  
-> │  │  
-> │  └─Python  
-> │          Python 下载安装版 复制文件后卸载.url  
-> │  
-> └─VS Code  
->         VS Code ZIP.url  
->  
